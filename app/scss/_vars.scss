@@ -5,9 +5,19 @@
   @return m#{i}n(#{$numbers});
 }
 
-$days-one: 'Russo One', sans-serif;
-$monts: 'Montserrat';
-$robot: 'Roboto';
-$sansal: 'SansationL' ;
-$sansar: 'SansationR';
-$neon: 'Neon';
+$days: 'Montserrat', sans-serif;
+$monts: 'Montserrat', sans-serif;
+$robot: 'Roboto', sans-serif;
+$sansal: 'SansationL', sans-serif;
+$sansar: 'SansationR', sans-serif;
+$neon: 'Neon', sans-serif;
+
+%btn-type-pink {
+  font-size: 24px;
+  line-height: 1.125;
+  color: #fff;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 70px;
+  letter-spacing: 0.05em;
+}

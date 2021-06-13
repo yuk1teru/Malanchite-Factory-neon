@@ -1,0 +1,112 @@
+.request {
+  padding-top: 270px;
+  padding-bottom: 150px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img-box {
+    position: relative;
+    margin-left: 54px;
+    flex-basis: 500px;
+    &::before {
+      position: absolute;
+      z-index: 1;
+      top: -116px;
+      right: -110px;
+      content: '';
+      width: 300px;
+      height: 291px;
+      background-image: url(../../images/request-circle.png);
+      animation: circle-rotate 100s linear infinite;
+    }
+  }
+  &__img {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__content {
+    max-width: 462px;
+    padding-top: 106px;
+    margin-right: 118px;
+  }
+  &__title {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: $monts;
+    font-size: 36px;
+    line-height: 1.28;
+    color: #faf0e6;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+  }
+  &__text {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: $monts;
+
+    font-size: 20px;
+    line-height: 1.2;
+
+    color: #dddcdb;
+    &--small {
+      position: relative;
+      padding-left: 36px;
+      margin-top: 25px;
+      font-size: 12px;
+      line-height: 1.25;
+      margin-bottom: 34px;
+      &::before {
+        position: absolute;
+        left: 30px;
+        content: '*';
+      }
+    }
+    &:nth-child(4) {
+      margin-top: 30px;
+      padding-left: 30px;
+    }
+  }
+  &__list {
+    padding-left: 30px;
+    padding-right: 20px;
+    font-family: $monts;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #dddcdb;
+  }
+  &__item {
+    position: relative;
+    &::before {
+      content: '•';
+      padding-right: 10px;
+    }
+  }
+  &__item:last-child::before {
+    padding-right: 5px;
+  }
+  &__btn {
+    padding: 18px 62px;
+    font-size: 30px;
+    line-height: 1.13;
+    color: #faf0e6;
+    background-color: transparent;
+    border: 4px solid #faf0e6;
+    filter: drop-shadow(0px 0px 3px #faf0e6);
+    cursor: pointer;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    outline: none;
+    &:hover,
+    &:focus {
+      transform: translateY(3px);
+      box-shadow: 0px 0px 4px 3px #ac3e94;
+    }
+  }
+}
+
+@keyframes circle-rotate {
+  from {
+    transform: rotate(360deg);
+  }
+}

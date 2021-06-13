@@ -13,7 +13,7 @@
       margin-right: 10px;
     }
     &--second {
-      margin-right: 24px;
+      margin-right: 86px;
       margin-left: 10px;
     }
   }
@@ -22,13 +22,17 @@
 
     font-size: 22px;
     line-height: 1.14;
-
+    &:hover,
+    &:focus {
+      color: rgba(#faf0e6, 0.9);
+    }
     &--active {
       position: relative;
       color: #faf0e6;
       text-shadow: 0px 0px 2px #c1bfc3;
       transform: translateY(-10px);
       transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      animation: active-menu-neon 4s infinite;
       &::after {
         content: '';
         position: absolute;
@@ -38,6 +42,10 @@
         height: 1px;
         background-color: #faf0e6;
         box-shadow: 0px 0px 2px #faf0e6;
+      }
+      &:hover,
+      &:focus {
+        color: #faf0e6;
       }
     }
   }

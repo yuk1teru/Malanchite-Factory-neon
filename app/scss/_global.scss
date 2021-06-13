@@ -26,3 +26,36 @@ a {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.btn--pink {
+  padding-left: 66px;
+  padding-right: 66px;
+  background: #ac3e94;
+}
+
+@keyframes active-menu-neon {
+  0% {
+    filter: drop-shadow(0px 0px 1px #fff);
+  }
+  10% {
+    filter: drop-shadow(0px 0px 5px #fff);
+  }
+  15% {
+    filter: drop-shadow(0px 0px 3px #fff);
+  }
+  20% {
+    filter: drop-shadow(0px 0px 5px #fff);
+  }
+  40% {
+    filter: drop-shadow(0px 0px 4px #fff);
+  }
+  50% {
+    filter: drop-shadow(0px 0px 5px #fff);
+  }
+  77% {
+    filter: drop-shadow(0px 0px 0px #fff);
+  }
+  92% {
+    filter: drop-shadow(0px 0px 3px #fff);
+  }
+}

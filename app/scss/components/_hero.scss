@@ -1,0 +1,110 @@
+.hero {
+  position: relative;
+  padding-bottom: 185px;
+  &::before {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    content: '';
+    width: 1px;
+    height: 80px;
+    box-shadow: 0px 0px 250px 100px #571455;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../../images/arrow-down.svg);
+    width: 25px;
+    height: 34.4px;
+    filter: drop-shadow(0px 0px 2px #faf0e6);
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content-box {
+    margin-top: 74px;
+    padding-left: 50px;
+    max-width: 687px;
+  }
+  &__title {
+    max-width: 560px;
+    padding-left: 4px;
+    margin-bottom: 35px;
+    font-family: $monts;
+    font-size: 36px;
+    line-height: 1.28;
+    color: #faf0e6;
+    text-shadow: 0px 0px 2px #000000;
+  }
+  &__accent {
+    color: #e761ca;
+    &:hover,
+    &:focus {
+      filter: drop-shadow(0px 0px 20px #ac3e94);
+    }
+  }
+  &__text {
+    padding-left: 4px;
+    font-family: $monts;
+    font-size: 22px;
+    line-height: 1.21;
+    color: #dddcdb;
+    & + & {
+      margin-top: 35px;
+      margin-bottom: 62px;
+    }
+  }
+  &__btn-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__btn {
+    @extend %btn-type-pink;
+    border: 3px solid #ac3e94;
+    filter: drop-shadow(0px 0px 15px #ac3e94);
+
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+      filter 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    &:hover,
+    &:focus {
+      transform: translateY(3px);
+      box-shadow: 0px 0px 3px 1px #ac3e94;
+    }
+    &--black {
+      padding-left: 35px;
+      padding-right: 35px;
+      background-color: transparent;
+    }
+  }
+  &__img {
+    animation: image-neon 10s infinite;
+    // box-shadow: 0px 0px 16px 8px #28052f;
+    margin-right: 54px;
+  }
+}
+
+@keyframes image-neon {
+  0% {
+    box-shadow: 0px 0px 16px 8px #28052f;
+  }
+  20% {
+    box-shadow: 0px 0px 18px 12px #28052f;
+  }
+
+  40% {
+    box-shadow: 0px 0px 16px 8px #28052f;
+  }
+
+  70% {
+    box-shadow: 0px 0px 10px 8px #28052f;
+  }
+  100% {
+    box-shadow: 0px 0px 14px 8px #28052f;
+  }
+}
