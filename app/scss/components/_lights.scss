@@ -1,0 +1,27 @@
+.hero {
+  position: relative;
+  &::before {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    content: '';
+    width: 1px;
+    height: 80px;
+    box-shadow: 0px 0px 250px 100px #571455;
+  }
+}
+
+.order {
+  position: relative;
+  &::before {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    // transform: translateX(-20px);
+    content: '';
+    width: 1px;
+    height: 60px;
+    box-shadow: 0px 0px 250px 100px #dc143c;
+  }
+}

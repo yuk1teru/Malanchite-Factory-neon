@@ -1,0 +1,65 @@
+.footer {
+  &__inner {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 105px;
+    font-family: $neon;
+    text-align: center;
+    font-size: 64px;
+    line-height: 1.17;
+
+    color: #0bda51;
+    text-shadow: 0px 0px 6px #0bda51;
+  }
+  &__social-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 145px;
+  }
+  &__social-name {
+    margin-bottom: 12px;
+    font-family: $monts;
+
+    font-size: 24px;
+    line-height: 1.17;
+
+    color: #4a47a3;
+  }
+
+  &__social-link {
+    font-family: $monts;
+
+    font-size: 18px;
+    line-height: 1.17;
+
+    color: #9a9a9a;
+  }
+  &__icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+    border-radius: 50%;
+    background: linear-gradient(
+      45deg,
+      #4a47a3 0%,
+      #3b1cff 50.52%,
+      #3283e2 100%
+    );
+  }
+  &__copyright {
+    font-size: 14px;
+    line-height: 1.14;
+
+    text-align: center;
+
+    color: #c1bfc3;
+    &--accent {
+      color: #0bda51;
+    }
+  }
+}
