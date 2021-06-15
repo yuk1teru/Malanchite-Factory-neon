@@ -37,6 +37,14 @@
     line-height: 1.17;
 
     color: #9a9a9a;
+    transition: color 0.2s linear;
+    &:hover,
+    &:focus {
+      color: #fff;
+      .footer__icon {
+        filter: drop-shadow(0px 0px 4px #3b1cff);
+      }
+    }
   }
   &__icon {
     display: inline-flex;
@@ -52,6 +60,7 @@
       #3b1cff 50.52%,
       #3283e2 100%
     );
+    transition: filter 0.2s linear;
   }
   &__copyright {
     font-size: 14px;

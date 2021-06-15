@@ -1,83 +1,103 @@
 .hero {
   &::before {
     position: absolute;
+
     top: -5px;
     right: 0;
-    transform: translateX(50px);
+
     content: '';
+
+    background-color: rgba(#571455, 0.5);
     width: 1px;
-    height: 80px;
-    box-shadow: 0px 0px 120px 100px #571455;
+    height: 100px;
+    box-shadow: 0px 0px 120px 50px #571455;
   }
 }
 .request {
   position: relative;
   &::before {
     position: absolute;
+
     top: 555px;
     right: 0;
-    transform: translateX(50px);
+
     content: '';
+    background-color: rgba(#5e09e4, 0.5);
+
     width: 1px;
-    height: 80px;
-    box-shadow: 0px 0px 120px 100px #5e09e4;
+    height: 100px;
+    box-shadow: 0px 0px 120px 50px #5e09e4;
   }
   &::after {
     position: absolute;
+
     top: -50px;
     left: 0;
     content: '';
-    transform: translateX(-50px);
+    background-color: rgba(#571455, 0.5);
+
     width: 1px;
-    height: 80px;
-    box-shadow: 0px 0px 120px 100px #571455;
+    height: 100px;
+    box-shadow: 0px 0px 120px 50px #571455;
   }
 }
 .portfolio {
   position: relative;
   &::before {
     position: absolute;
+
     top: 0;
     left: 0;
-    transform: translateX(-100px) translateY(60px);
+
     content: '';
+    background-color: rgba(#0bda51, 0.5);
+
     width: 1px;
-    height: 80px;
-    box-shadow: 0px 0px 120px 100px #0bda51;
+    height: 100px;
+    box-shadow: 0px 0px 120px 50px #0bda51;
   }
 }
 .order {
   &::before {
     position: absolute;
+
     top: 0;
     right: 0;
-    transform: translateX(60px);
+
     content: '';
+    background-color: rgba(#dc143c, 0.5);
+
     width: 1px;
-    height: 60px;
-    box-shadow: 0px 0px 150px 100px #dc143c;
+    height: 100px;
+    box-shadow: 0px 0px 150px 50px #dc143c;
   }
   &::after {
     position: absolute;
+
     bottom: 0;
     left: 0;
-    transform: translateX(-120px) translateY(60px);
+
     content: '';
+    background-color: rgba(#e761ca, 0.5);
+
     width: 1px;
-    height: 60px;
-    box-shadow: 0px 0px 130px 100px #e761ca;
+    height: 100px;
+    box-shadow: 0px 0px 130px 50px #e761ca;
   }
 }
 .footer {
   position: relative;
   &::before {
     position: absolute;
+
     bottom: 75px;
     right: 0;
-    transform: translateX(120px);
+
     content: '';
+    background-color: rgba(#0bda51, 0.5);
+
     width: 1px;
-    height: 60px;
-    box-shadow: 0px 0px 130px 100px #0bda51;
+    height: 100px;
+    box-shadow: 0px 0px 130px 50px #0bda51;
   }
 }

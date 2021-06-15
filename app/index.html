@@ -16,17 +16,21 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
-  <body>
+  <body class="body">
     <div class="wrapper">
       <header class="header">
         <div class="container">
           <nav class="nav">
             <ul class="nav__list nav__list--first">
               <li class="nav__item">
-                <a class="nav__link" href="#">Про нас</a>
+                <a class="nav__link" href="javascript://0" id="menu-hero"
+                  >Про нас</a
+                >
               </li>
               <li class="nav__item nav__item--active">
-                <a class="nav__link" href="#">Портфоліо</a>
+                <a class="nav__link" href="javascript://0" id="menu-portfolio"
+                  >Портфоліо</a
+                >
               </li>
             </ul>
             <div class="logo-box">
@@ -37,10 +41,14 @@
             </div>
             <ul class="nav__list nav__list--second">
               <li class="nav__item">
-                <a class="nav__link" href="#">Як замовити?</a>
+                <a class="nav__link" href="javascript://0" id="menu-order"
+                  >Як замовити?</a
+                >
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Зв’язатися</a>
+                <a class="nav__link" href="javascript://0" id="menu-contacts"
+                  >Зв’язатися</a
+                >
               </li>
             </ul>
           </nav>
@@ -48,7 +56,7 @@
       </header>
 
       <main class="main">
-        <section class="hero">
+        <section class="hero" id="hero">
           <div class="container">
             <div class="hero__inner">
               <div class="hero__content-box">
@@ -69,13 +77,13 @@
                 </p>
                 <div class="hero__btn-box">
                   <button
-                    class="hero__btn hero__btn--black"
+                    class="hero__btn hero__btn--black btn-cost"
                     aria-label="Кнопка Розрахувати вартість"
                   >
                     Розрахувати вартість
                   </button>
                   <button
-                    class="hero__btn btn--pink"
+                    class="hero__btn btn--pink btn-request"
                     aria-label="Кнопка Замовити"
                   >
                     Замовити
@@ -91,7 +99,7 @@
             </div>
           </div>
         </section>
-        <section class="request">
+        <section class="request" id="request">
           <div class="container">
             <div class="request__inner">
               <div class="request__img-box">
@@ -121,7 +129,7 @@
                   попередньо Ви можете вирахувати приблизну вартість замовлення
                 </p>
                 <button
-                  class="request__btn"
+                  class="request__btn btn-cost"
                   aria-label="Кнопка Розрахувати вартіть"
                 >
                   Розрахувати вартіcть
@@ -131,7 +139,7 @@
           </div>
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
           <div class="container">
             <div class="portfolio__inner">
               <h2 class="portfolio__title" lang="en">portfolio</h2>
@@ -408,7 +416,7 @@
           </div>
         </section>
 
-        <section class="order">
+        <section class="order" id="order">
           <div class="container">
             <div class="order__inner">
               <div class="order__title-box">
@@ -477,7 +485,10 @@
                   </p>
                 </li>
               </ul>
-              <button class="order__btn btn--pink" aria-label="Кнопка Замовити">
+              <button
+                class="order__btn btn--pink btn-request"
+                aria-label="Кнопка Замовити"
+              >
                 Замовити
               </button>
             </div>
@@ -485,7 +496,7 @@
         </section>
       </main>
 
-      <footer class="footer">
+      <footer class="footer" id="contacts">
         <div class="container">
           <div class="footer__inner">
             <h2 class="footer__title">contact us</h2>
@@ -613,6 +624,157 @@
           </div>
         </div>
       </footer>
+      <div class="overlay hide overlay-request">
+        <div class="form form-request">
+          <div class="form__inner form-request__inner">
+            <h2 class="form__title form-request__title">ВАША ЗАЯВКА</h2>
+            <form class="form__form form-request__form">
+              <label class="form__label form-request__label">
+                <input
+                  class="form__input form-request__input"
+                  type="text"
+                  placeholder="Ім’я"
+                  autocomplete="off"
+                />
+              </label>
+              <label class="form__label form-request__label"
+                ><input
+                  class="form__input form-request__input"
+                  type="tel"
+                  name="tel"
+                  placeholder="Телефон"
+                  autocomplete="off"
+              /></label>
+              <label class="form__label form-request__label">
+                <textarea
+                  class="form__input form-request__input form__textarea"
+                  name=""
+                  id=""
+                  rows="1"
+                  placeholder="Якою ви бачите свою вивіску?"
+                  autocomplete="off"
+                ></textarea>
+              </label>
+              <button
+                class="form__btn form-request__btn"
+                type="submit"
+                aria-label="кнопка для надіслання заявки"
+              >
+                Надіслати
+              </button>
+            </form>
+            <div class="form__close form-request__close">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="2.70394"
+                  height="32.4472"
+                  rx="1.35197"
+                  transform="matrix(0.710921 0.703272 -0.710921 0.703272 23.0674 0)"
+                  fill="#FAF0E6"
+                />
+                <rect
+                  width="2.70394"
+                  height="32.4472"
+                  rx="1.35197"
+                  transform="matrix(0.710921 -0.703272 0.710921 0.703272 0.0102539 2.18077)"
+                  fill="#FAF0E6"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay hide overlay-cost">
+        <div class="form form-cost">
+          <div class="form__inner form-cost__inner">
+            <h2 class="form__title form-cost__title">РОЗРАХУВАТИ ВАРТІСТЬ</h2>
+            <form class="form__form form-cost__form">
+              <label class="form__label form-cost__label">
+                <input
+                  class="form__input form-cost__input"
+                  type="text"
+                  placeholder="Ширина, мм"
+                  autocomplete="off"
+                />
+              </label>
+              <label class="form__label form-cost__label">
+                <input
+                  class="form__input form-cost__input"
+                  type="text"
+                  placeholder="Висота, мм"
+                  autocomplete="off"
+                />
+              </label>
+              <label class="form__label form-cost__label">
+                <input
+                  class="form__input form-cost__input"
+                  type="text"
+                  placeholder="Довжина неону, м"
+                  autocomplete="off"
+                />
+              </label>
+              <label class="form__label form-cost__label">
+                <input
+                  class="form__input form-cost__input"
+                  type="text"
+                  placeholder="Кількість елементів"
+                  autocomplete="off"
+                />
+              </label>
+              <div class="form-cost__calculation">
+                <p class="form-cost__calculation-text">
+                  Вартість:
+                  <span class="form-cost__calculation-price">1000 ₴</span>
+                </p>
+                <p class="form-cost__calculation-footnote">
+                  *вирахована сумма
+                  <span class="form-cost__calculation--accent">приблизна</span>.
+                  Для визначення більш точної вартості,залиште
+                  <span class="form-cost__calculation--accent"> заявку</span> на
+                  сайті
+                </p>
+              </div>
+              <button
+                class="form__btn form-cost__btn"
+                type="submit"
+                aria-label="розрахунок вартості"
+              >
+                РОЗРАХУНОК
+              </button>
+            </form>
+            <div class="form__close form-cost__close">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="2.70394"
+                  height="32.4472"
+                  rx="1.35197"
+                  transform="matrix(0.710921 0.703272 -0.710921 0.703272 23.0674 0)"
+                  fill="#FAF0E6"
+                />
+                <rect
+                  width="2.70394"
+                  height="32.4472"
+                  rx="1.35197"
+                  transform="matrix(0.710921 -0.703272 0.710921 0.703272 0.0102539 2.18077)"
+                  fill="#FAF0E6"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="js/main.min.js"></script>
