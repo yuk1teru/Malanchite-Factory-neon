@@ -141,13 +141,13 @@
       }
     }
   }
+
   .swiper-wrapper.show-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     transform: none !important;
-    .swiper-slide + .swiper-slide {
-      margin-top: 50px;
-    }
   }
 
   .swiper-wrapper.show-content ~ .swiper-button-prev,

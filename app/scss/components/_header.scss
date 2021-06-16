@@ -4,6 +4,8 @@
   align-items: center;
   margin-top: 39px;
   margin-bottom: 100px;
+  position: relative;
+
   &__list {
     display: flex;
     justify-content: space-between;
@@ -86,5 +88,114 @@
     & + & {
       margin-top: 10px;
     }
+  }
+}
+
+// кнопка меню
+
+.menu__button {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  border-radius: 50px;
+  width: 50px;
+  height: 4px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  filter: drop-shadow(0px 0px 3px #faf0e6);
+  transition: background-color 0.1s ease-in;
+}
+.menu__button::before,
+.menu__button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+  transition: transform 0.2s ease-in;
+  border-radius: 50px;
+}
+.menu__button::before {
+  transform: translateY(-15px);
+}
+.menu__button::after {
+  transform: translateY(15px);
+}
+.menu__button.open {
+  background-color: transparent;
+}
+.menu__button.open::before {
+  transform: rotate(-45deg);
+}
+.menu__button.open::after {
+  transform: rotate(45deg);
+}
+
+@keyframes lights {
+  0% {
+    background-color: rgb(231, 97, 202);
+  }
+  20% {
+    background-color: rgb(97, 231, 119);
+  }
+  40% {
+    background-color: rgb(111, 97, 240);
+  }
+  60% {
+    background-color: rgb(231, 97, 97);
+  }
+  80% {
+    background-color: rgb(97, 231, 224);
+  }
+  100% {
+    background-color: rgb(231, 97, 202);
+  }
+}
+@keyframes lights-light {
+  0% {
+    background-color: rgba(231, 97, 202, 0.5);
+  }
+  20% {
+    background-color: rgba(97, 231, 119, 0.5);
+  }
+  40% {
+    background-color: rgba(111, 97, 240, 0.5);
+  }
+  60% {
+    background-color: rgba(231, 97, 97, 0.5);
+  }
+  80% {
+    background-color: rgba(97, 231, 224, 0.5);
+  }
+  100% {
+    background-color: rgba(231, 97, 202, 0.5);
+  }
+}
+
+@keyframes lights-color {
+  0% {
+    filter: drop-shadow(0px 0px 3px rgb(231, 97, 202));
+  }
+  20% {
+    filter: drop-shadow(0px 0px 3px rgb(97, 231, 119));
+  }
+  40% {
+    filter: drop-shadow(0px 0px 3px rgb(111, 97, 240));
+  }
+  60% {
+    filter: drop-shadow(0px 0px 3px rgb(231, 97, 97));
+  }
+  80% {
+    filter: drop-shadow(0px 0px 3px rgb(97, 231, 224));
+  }
+  100% {
+    filter: drop-shadow(0px 0px 3px rgb(231, 97, 202));
   }
 }

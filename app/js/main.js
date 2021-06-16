@@ -1,8 +1,21 @@
 $(function () {
   const swiper = new Swiper('.swiper-container', {
     // loop: true,
-    spaceBetween: 100,
+    // slidesPerView: 2,
 
+    breakpoints: {
+      // when window width is >= 320px
+      0: {
+        slidesPerView: 1,
+      },
+      // when window width is >= 480px
+      520: {
+        slidesPerView: 1,
+      },
+      1065: {
+        slidesPerView: 3,
+      },
+    },
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
@@ -55,6 +68,22 @@ $(function () {
   $('.portfolio__inner .show-more').on('click', function (e) {
     var $wrapper = $('.swiper-wrapper');
     $wrapper.toggleClass('show-content');
+  });
+  //Кнопка меню
+  $('.menu__button').on('click', function (e) {
+    var $this = $(this);
+    $this.toggleClass('open');
+  });
+
+  $('.menu__button').on('click', function (e) {
+    var $menuL = $('.nav__list--first');
+
+    $menuL.toggleClass('close');
+  });
+  $('.menu__button').on('click', function (e) {
+    var $menuL = $('.nav__list--second');
+
+    $menuL.toggleClass('close');
   });
 
   //Форми
