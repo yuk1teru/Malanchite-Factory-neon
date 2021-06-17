@@ -1,1 +1,4 @@
-<svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="2.704" height="32.447" rx="1.352" transform="scale(1.0054 .99458) rotate(45 11.472 27.695)" fill="linen"/><rect width="2.704" height="32.447" rx="1.352" transform="scale(1.0054 .99458) rotate(-45 2.652 1.084)" fill="linen"/></svg>
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="2.70394" height="32.4472" rx="1.35197" transform="matrix(0.710921 0.703272 -0.710921 0.703272 23.0674 0)" fill="#FAF0E6"/>
+<rect width="2.70394" height="32.4472" rx="1.35197" transform="matrix(0.710921 -0.703272 0.710921 0.703272 0.0102539 2.18077)" fill="#FAF0E6"/>
+</svg>
