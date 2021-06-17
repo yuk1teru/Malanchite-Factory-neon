@@ -1,9 +1,10 @@
 @font-face {
   font-family: 'SansationL';
   src: local('Sansation Light'), local('Sansation-Light'),
-    url('../fonts/SansationLight.woff2') format('woff2'),
-    url('../fonts/SansationLight.woff') format('woff'),
-    url('../fonts/SansationLight.ttf') format('truetype');
+    // url('../fonts/SansationLight.woff2') format('woff2'),
+    url('../fonts/SansationLight.woff') format('woff') // ,
+    // url('../fonts/SansationLight.ttf') format('truetype')
+;
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -12,9 +13,10 @@
 @font-face {
   font-family: 'SansationR';
   src: local('Sansation Regular'), local('Sansation-Regular'),
-    url('../fonts/SansationRegular.woff2') format('woff2'),
+    // url('../fonts/SansationRegular.woff2') format('woff2'),
     url('../fonts/SansationRegular.woff') format('woff'),
-    url('../fonts/SansationRegular.ttf') format('truetype');
+    // url('../fonts/SansationRegular.ttf') format('truetype')
+;
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -22,7 +24,8 @@
 
 @font-face {
   font-family: 'Neon';
-  src: url('../fonts/NeonOne.woff2') format('woff2'),
+  src:
+  //  url('../fonts/NeonOne.woff2') format('woff2'),
     url('../fonts/NeonOne.woff') format('woff');
   font-weight: normal;
   font-style: normal;
