@@ -2,17 +2,6 @@
   position: relative;
   padding-bottom: 185px;
 
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-image: url(../images/arrow-down.svg);
-    width: 25px;
-    height: 34.4px;
-    filter: drop-shadow(0px 0px 2px #faf0e6);
-  }
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -76,6 +65,21 @@
     animation: image-neon 10s infinite;
     // box-shadow: 0px 0px 16px 8px #28052f;
     margin-right: 54px;
+  }
+  &__arrow-down {
+    padding: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../images/arrow-down.svg);
+    width: 25px;
+    height: 34.4px;
+    filter: drop-shadow(0px 0px 2px #faf0e6);
+    cursor: pointer;
   }
 }
 

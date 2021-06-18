@@ -1,7 +1,7 @@
 $(function () {
   const swiper = new Swiper('.swiper-container', {
     // loop: true,
-
+    freeMode: true,
     breakpoints: {
       // when window width is >= 320px
       0: {
@@ -53,6 +53,15 @@ $(function () {
     $('html, body').animate(
       {
         scrollTop: $('#contacts').offset().top,
+      },
+      1000,
+    );
+  });
+
+  $('#hero__arrow-down').click(function () {
+    $('html, body').animate(
+      {
+        scrollTop: $('#portfolio').offset().top,
       },
       1000,
     );
