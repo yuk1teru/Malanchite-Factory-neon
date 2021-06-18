@@ -2,7 +2,7 @@
   font-family: 'SansationL';
   src: local('Sansation Light'), local('Sansation-Light'),
     url('../fonts/SansationLight.woff2') format('woff2'),
-    url('../fonts/SansationLight.woff') format('woff') // ,
+    url('../fonts/SansationLight.woff') format('woff'),
     url('../fonts/SansationLight.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
@@ -10,7 +10,9 @@
 }
 @font-face {
   font-family: 'Roboto';
-  src: local('Roboto'), url('../fonts/Roboto-Regular.ttf') format('truetype');
+  src: local('Roboto'), url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
