@@ -1,8 +1,6 @@
 $(function () {
   const swiper = new Swiper('.swiper-container', {
     // loop: true,
-    slidesPerView: 3,
-    spaceBetween: 50,
 
     breakpoints: {
       // when window width is >= 320px
@@ -10,11 +8,12 @@ $(function () {
         slidesPerView: 1,
       },
       // when window width is >= 480px
-      520: {
-        slidesPerView: 1,
+      740: {
+        slidesPerView: 2,
       },
-      1065: {
+      1066: {
         slidesPerView: 3,
+        spaceBetween: 120,
       },
     },
     // Navigation arrows
@@ -58,6 +57,7 @@ $(function () {
       1000,
     );
   });
+
   // Кнопка показати більше
 
   $('.portfolio__inner .show-more').on('click', function (e) {
@@ -68,7 +68,9 @@ $(function () {
 
   $('.portfolio__inner .show-more').on('click', function (e) {
     var $wrapper = $('.swiper-wrapper');
+    var $swiperContainerPadd = $('.swiper-container');
     $wrapper.toggleClass('show-content');
+    $swiperContainerPadd.toggleClass('swiper-container--no-padd');
   });
   //Кнопка меню
   $('.menu__button').on('click', function (e) {

@@ -27,9 +27,6 @@
       margin-left: 0;
     }
   }
-  .swiper-slide-content {
-    margin-right: 10px;
-  }
 }
 @media screen and (max-width: 1240px) {
   .container {
@@ -69,6 +66,23 @@
     &__title {
       margin-bottom: 100px;
       font-size: 58px;
+    }
+    &__comment {
+      top: 0;
+      justify-content: center;
+      padding: 5px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+    &__icon {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+      img {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
   .order {
@@ -126,12 +140,13 @@
       }
     }
     &__content-box {
-      max-width: none;
-      margin-right: 50px;
+      max-width: 500px;
     }
 
     &__img {
-      width: 300px;
+      align-self: center;
+      max-height: 400px;
+      max-width: 300px;
     }
   }
   .request {
@@ -172,6 +187,27 @@
     &__btn {
       font-size: 24px;
       margin-top: 100px;
+    }
+    .swiper-wrapper.show-content {
+      .swiper-slide {
+        margin-top: 20px;
+        margin-right: 0 !important;
+        &:nth-child(-n + 3) {
+          margin-top: 20px;
+        }
+        &:nth-child(-n + 2) {
+          margin-top: 0;
+        }
+      }
+    }
+    &__comment {
+      padding: 10px;
+    }
+    &__text {
+      font-size: 18px;
+    }
+    &__icon {
+      margin-bottom: 25px;
     }
   }
   .order {
@@ -254,9 +290,10 @@
     &__content-box {
       margin-top: 0;
       margin: 0 auto;
+      max-width: 650px;
     }
     &__title {
-      font-size: 28px;
+      font-size: 39px;
       text-align: center;
     }
     &__text {
@@ -340,6 +377,20 @@
       font-size: 23px;
       padding: 9px 31px;
       margin-left: 30px;
+    }
+  }
+  .portfolio {
+    .swiper-wrapper.show-content {
+      .swiper-slide {
+        margin-top: 20px;
+        margin-right: 0 !important;
+        &:nth-child(-n + 3) {
+          margin-top: 20px;
+        }
+        &:nth-child(-n + 1) {
+          margin-top: 0;
+        }
+      }
     }
   }
   .order {
@@ -615,6 +666,27 @@
       &--small {
         font-size: 11px;
       }
+    }
+  }
+  .portfolio {
+    &__comment {
+      padding: 5px;
+    }
+    &__text {
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+    &__icon {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 5px;
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+    &__price {
+      font-size: 14px;
     }
   }
   .order {
